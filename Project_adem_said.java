@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
     // Main method to test the class
     public static void main(String[] args) 
     {
