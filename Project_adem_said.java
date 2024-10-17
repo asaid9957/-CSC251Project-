@@ -1,3 +1,7 @@
+import java.util.Scanner;
+    
+    public class Project_adem_said
+    {
     // Main method to test the class
     public static void main(String[] args) 
     {
@@ -44,3 +48,4 @@
         System.out.println("Policyholder's BMI: " + String.format("%.2f", policy.calculateBMI()));
         System.out.println("Policy Price: $" + String.format("%.2f", policy.calculatePrice()));
     }
+}
