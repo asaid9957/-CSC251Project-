@@ -9,6 +9,8 @@ public class Policy
     private String policyholderSmokingStatus;
     private double policyholderHeight; 
     private double policyholderWeight; 
+    private int smokerCount;
+    private int nonSmokerCount;
 
     // No-arg constructor with default values
     public Policy() 
@@ -21,6 +23,8 @@ public class Policy
         this.policyholderSmokingStatus = "non-smoker";
         this.policyholderHeight = 0.0;
         this.policyholderWeight = 0.0;
+        this.smokerCount = 0.0;
+        this.nonSmokerCount = 0.0;
     }
 
     // Constructor with arguments
@@ -34,6 +38,8 @@ public class Policy
         this.policyholderSmokingStatus = policyholderSmokingStatus;
         this.policyholderHeight = policyholderHeight;
         this.policyholderWeight = policyholderWeight;
+        this.smokerCount = smokerCount;
+        this.nonSmokerCount = nonSmokerCount;
     }
 
     // Getters and Setter Methods
@@ -150,5 +156,16 @@ public class Policy
 
         return basePrice + additionalFee;
     }
-
+     // Count smokers and non-smokers
+     if (smokingStatus.equalsIgnoreCase("smoker")) 
+        {
+            smokerCount++;
+        } 
+     else 
+        {
+            nonSmokerCount++;
+        }
+           
 }
+ 
+ 
